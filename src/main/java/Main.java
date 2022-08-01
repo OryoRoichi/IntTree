@@ -10,9 +10,17 @@ public class Main {
             }
         });
         Random random = new Random();
-        for (int i = 0; i < 20; i++) {
-            Node node = manager.add(random.nextInt(100));
+        for (int i = 0; i < 5; i++) {
+            Node node = manager.add(random.nextInt(20));
             System.out.println(node);
         }
+        System.out.println("-------------");
+        System.out.println(manager.getMax());
+        System.out.println("-------------");
+        System.out.println(manager.getMin());
+        System.out.println("-------------");
+        System.out.println(manager.get(5));
+        System.out.println("-------------");
+        System.out.println(manager.getGreaterThen(2));
     }
 }
